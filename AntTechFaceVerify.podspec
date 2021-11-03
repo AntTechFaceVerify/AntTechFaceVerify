@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
  
 
   spec.name         = "AntTechFaceVerify"
-  spec.version      = "0.0.1"
+  spec.version      = "1.4.3"
   spec.summary      = "可信实人认证提供 iOS 客户端 SDK 帮助您在 App 中实现刷脸认证功能."
 
   spec.resources = ['*.bundle']
