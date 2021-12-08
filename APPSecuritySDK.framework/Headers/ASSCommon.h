@@ -12,229 +12,193 @@
 //#define IN_DEBUG
 #define USED_BY_ALIPAY
 
-extern NSString* const PRIVATE_KEY_XXXX;
+static NSErrorDomain APSECURITYSDK_ERROR_DOMAIN  = @"APSecuritySDKErrorDomain";
 
-extern NSString* const PRIVATE_KEY_CLIENTKEY;
+static NSString* const PRIVATE_KEY_XXXX = @"qqAIhzy)H)ip53<>ugx,sI{#}CE$37L|z5G=IScgO^=aQHaN[b|NM.RWdZpcy.r$";
 
+static NSString* const PRIVATE_KEY_CLIENTKEY = @"EQopzyui)H)ipQW983<ll>uitx,sgI{#}##20110kl==^^woQG,msq.xinjun.$$";
 
+static NSString* const LOG_SWITCH_SETTING_INITIALIZED = @"开关设置从keychain初始化成功";
 
-//LOG信息
-extern NSString* const LOG_SWITCH_SETTING_INITIALIZED;
+static NSString* const LOG_LOAD_SETTING_EXCEPTION = @"开关设置在keychain中无存储，读取失败";
 
-extern NSString* const LOG_LOAD_SETTING_EXCEPTION;
+static NSString* const LOG_DECRYPT_SETTING_EXCEPTION = @"开关设置从keychain中读取成功，解密失败";
 
-extern NSString* const LOG_DECRYPT_SETTING_EXCEPTION;
+static NSString* const LOG_SWITCH_APPLIST_INITIALIZED = @"applist从keychain初始化成功";
 
-extern NSString* const LOG_SWITCH_APPLIST_INITIALIZED;
+static NSString* const LOG_LOAD_APPLIST_EXCEPTION = @"applist相关信息在keychain中无存储，读取失败";
 
-extern NSString* const LOG_LOAD_APPLIST_EXCEPTION;
+static NSString* const LOG_DECRYPT_APPLIST_EXCEPTION = @"applist信息从keychain中读取成功，解密失败";
 
-extern NSString* const LOG_DECRYPT_APPLIST_EXCEPTION;
+static NSString* const LOG_UMID_TOKEN_REQUEST_BACK = @"UMID TOKEN返回结果为：";
 
-extern NSString* const LOG_UMID_TOKEN_REQUEST_BACK;
+static NSString* const LOG_VKEYINFO_GENERATED = @"本地VKEY开关打开，将生成VKEY信息";
 
-extern NSString* const LOG_VKEYINFO_GENERATED;
+static NSString* const LOG_VKEYINFO_ABORT = @"本地VKEY开关关闭，将放弃生成VKEY信息";
 
-extern NSString* const LOG_VKEYINFO_ABORT;
+static NSString* const LOG_VKEY_NO_KEYCHAIN_CACHE = @"VKEY缓存信息在keychain中无存储，读取失败";
 
-extern NSString* const LOG_VKEY_NO_KEYCHAIN_CACHE;
+static NSString* const LOG_VKEY_FOUND_KEYCHAIN_CACHE = @"VKEY缓存信息在keychain中获取缓存值";
 
-extern NSString* const LOG_VKEY_FOUND_KEYCHAIN_CACHE;
+static NSString* const LOG_VKEY_INFO_DETAIL = @"KEY信息为：";
 
-extern NSString* const LOG_VKEY_GENERATION_EXCEPTION;
+static NSString* const LOG_VKEY_GENERATION_EXCEPTION = @"VEr：";
 
-extern NSString* const LOG_GID_GENERATED;
+static NSString* const LOG_GID_GENERATED = @"本地GID开关打开，将生成GID信息";
 
-extern NSString* const LOG_GID_ABORT;
+static NSString* const LOG_GID_ABORT = @"本地GID开关关闭，将放弃生成GID信息";
 
-extern NSString* const LOG_GID_NO_KEYCHAIN_CACHE;
+static NSString* const LOG_GID_NO_KEYCHAIN_CACHE = @"GID缓存信息在keychain中无存储，读取失败";
 
-extern NSString* const LOG_GID_FOUND_KEYCHAIN_CACHE;
+static NSString* const LOG_GID_FOUND_KEYCHAIN_CACHE = @"GID缓存信息在keychain中获取缓存值";
 
-extern NSString* const LOG_GID_INFO_DETAIL;
+static NSString* const LOG_GID_INFO_DETAIL = @"GID信息为：";
 
-extern NSString* const LOG_GID_GENERATION_EXCEPTION;
+static NSString* const LOG_VOS_RUNNING = @"VKEY任务启动";
 
-extern NSString* const LOG_VKEY_INFO_DETAIL;
+static NSString* const LOG_VOS_ASYNC_ABORT = @"放弃异步VOS任务";
 
-extern NSString* const LOG_VOS_RUNNING;
+static NSString* const LOG_VOS_VKEY_GENERATION = @"VOS VKEY采集中";
 
-extern NSString* const LOG_VOS_VKEY_GENERATION;
+static NSString* const LOG_VOS_GID_GENERATION = @"VOS GID采集中";
 
-extern NSString* const LOG_VOS_GID_GENERATION;
+static NSString* const LOG_GID_GENERATION_EXCEPTION = @"GEr:";
 
-extern NSString* const LOG_VOS_ASYNC_ABORT;
+static NSString* const LOG_JB_ERROR_DETECTED = @"JEr";
 
-extern NSString* const LOG_JB_ERROR_DETECTED;
+static NSString* const LOG_STATIC_INFO_DETAIL = @"采集静态信息列表如下：";
 
-extern NSString* const LOG_STATIC_INFO_DETAIL;
+static NSString* const LOG_APP_LIST_INFO_COLLECTED = @"APPLIST信息扫描获取中";
 
-extern NSString* const LOG_APP_LIST_INFO_COLLECTED;
+static NSString* const LOG_APP_LIST_INFO_ABORT = @"APPLIST信息放弃扫描获取";
 
-extern NSString* const LOG_APP_LIST_INFO_ABORT;
+static NSString* const LOG_LOAD_MODEL_KEYCHAIN_EXCEPTION = @"VKEYID在keychain无存储，读取失败";
 
-extern NSString* const LOG_LOAD_MODEL_KEYCHAIN_EXCEPTION;
+static NSString* const LOG_LOAD_MODEL_FROM_KEYCHAIN = @"VKEYID从keychain中成功读取";
 
-extern NSString* const LOG_LOAD_MODEL_FROM_KEYCHAIN;
+static NSString *const LOG_LOCALMODEL_ABSENT = @"本地未找到VKEYID存储";
 
-extern NSString *const LOG_LOCALMODEL_ABSENT;
+static NSString *const LOG_LOCALMODEL_LOADSUCCESS = @"本地成功找到VKEYID存储";
 
-extern NSString *const LOG_LOCALMODEL_LOADSUCCESS;
+static NSString *const LOG_LOAD_PREAPDID_SUCCESS = @"本地成功在keychain中读取旧版apdid的值:";
 
-extern NSString *const LOG_LOAD_PREAPDID_SUCCESS;
+static NSString *const LOG_LOAD_PREAPDID_FAILED = @"旧版apdid在keychain中无存储，读取失败";
 
-extern NSString *const LOG_LOAD_PREAPDID_FAILED;
+static NSString* const LOG_STATIC_INFO_CHANGED = @"所采集的静态信息发生改变或者存储中没有记录";
 
-extern NSString* const LOG_STATIC_INFO_CHANGED;
+static NSString* const LOG_STATIC_INFO_SAME = @"所采集的静态信息与存储中相同";
 
-extern NSString* const LOG_STATIC_INFO_SAME;
+static NSString* const LOG_TODAY_FIRST = @"检测为24小时内首次请求";
 
-extern NSString* const LOG_TODAY_FIRST;
+static NSString* const LOG_NOT_TODAY_FIRST = @"检测24小时内已经发起过请求";
 
-extern NSString* const LOG_NOT_TODAY_FIRST;
+static NSString *const LOG_GETAPDIDTOKEN_RET_LOCAL = @"不发起网络请求，直接返回本地存储";
 
-extern NSString *const LOG_GETAPDIDTOKEN_RET_LOCAL;
+static NSString* const LOG_CONNECT_TO_SERVER = @"需要访问服务器请求TOKEN";
 
-extern NSString* const LOG_CONNECT_TO_SERVER;
+static NSString* const LOG_REQUEST_INFO_INCLUDED = @"静态请求上传需要携带静态信息";
 
-extern NSString* const LOG_REQUEST_INFO_INCLUDED;
+static NSString* const LOG_REQUEST_INFO_EXCLUDED = @"静态请求上传不需要携带静态信息";
 
-extern NSString* const LOG_REQUEST_INFO_EXCLUDED;
+static NSString* const LOG_STATIC_REQUEST_EXCEPTION = @"静态数据请求发送出现异常";
 
-extern NSString* const LOG_STATIC_REQUEST_EXCEPTION;
+static NSString* const LOG_STATIC_REQUEST_FAILED = @"静态数据请求返回出现错误";
 
-extern NSString* const LOG_STATIC_REQUEST_SUCCESS;
+static NSString* const LOG_STATIC_REQUEST_SUCCESS = @"静态数据请求请求返回";
 
-extern NSString* const LOG_SERVER_RESPONSE_SUCCESS;
+static NSString* const LOG_SERVER_RESPONSE_SUCCESS = @"服务端返回结果通过验证，证明有效：";
 
-extern NSString* const LOG_SERVER_RESPONSE_FAILED;
+static NSString* const LOG_SERVER_RESPONSE_FAILED = @"服务端获取TOKEN失败";
 
-extern NSString *const LOG_LOCALMODEL_SAVED_KEYCHAIN;
+static NSString* const LOG_LOG_REQUEST_RESPONSE = @"日志上传成功返回";
 
-extern NSString *const LOG_UPDATE_SETTING;
+static NSString *const LOG_LOCALMODEL_SAVED_KEYCHAIN = @"成功将VKEY ID保存至keychain";
 
-extern NSString* const LOG_APP_LIST_NEED_UPDATE;
+static NSString *const LOG_UPDATE_SETTING = @"已更新keychain中开关的设置值";
 
-extern NSString *const LOG_UPDATE_APPLIST;
+static NSString* const LOG_APP_LIST_NEED_UPDATE = @"经过检测，app list列表需要从服务器更新";
 
-extern NSString* const LOG_APPLIST_SETTING_SAVED_KEYCHAIN;
+static NSString *const LOG_UPDATE_APPLIST = @"app list列表成功从服务器更新";
 
-extern NSString* const LOG_APP_LIST_REQUEST_EXCEPTION;
+static NSString* const LOG_APPLIST_SETTING_SAVED_KEYCHAIN = @"app list列表信息成功更新至keychain保存";
 
-extern NSString* const LOG_APP_LIST_RESPONSE_FAILED;
+static NSString* const LOG_APP_LIST_REQUEST_EXCEPTION = @"app list请求出现异常";
 
-extern NSString* const LOG_LOG_UPDATE_EXCEPTION;
+static NSString* const LOG_APP_LIST_RESPONSE_FAILED = @"app list请求结果失败";
 
-extern NSString* const LOG_LOG_UPLOAD_ERROR;
+static NSString* const LOG_LOG_UPDATE_EXCEPTION = @"日志信息请求发送出现异常";
 
-extern NSString* const LOG_SETTINGMODEL_SAVEFAILED;
+static NSString* const LOG_LOG_UPLOAD_ERROR = @"日志信息发送出现错误";
 
-extern NSString* const LOG_SETTINGMODEL_SUCCESS;
+static NSString* const LOG_LOG_UPLOAD_SUCCESS = @"日志信息发送返回成功";
 
-extern NSString* const LOG_LOG_REQUEST_RESPONSE;
+static NSString *const LOG_SETTINGMODEL_SAVEFAILED = @"开关信息保存错误";
 
-extern NSString* const LOG_JSON_PARSE_EXCEPTION;
+static NSString *const LOG_SETTINGMODEL_SUCCESS = @"开关信息成功保存到keychain";
 
-extern NSString* const LOG_LOG_UPLOAD_PROCESS;
+static NSString* const LOG_LOG_UPLOAD_PROCESS = @"上报日志开关打开，开始上报错误日志流程";
 
-extern NSString* const LOG_LOG_UPLOAD_ABORT;
+static NSString* const LOG_LOG_UPLOAD_ABORT = @"上报日志开关关闭，放弃上报错误日志";
 
-extern NSString* const LOG_LOG_UPLOAD_SUCCESS;
+static NSString* const LOG_LOG_FILE_DETAIL = @"检测到错误日志文件：";
 
-extern NSString* const LOG_LOG_FILE_DETAIL;
+static NSString* const LOG_LOG_FILE_REMOVAL = @"已经删除错误日志文件：";
 
-extern NSString* const LOG_LOG_FILE_REMOVAL;
+static NSString* const LOG_LOG_UPLOAD_START = @"开始日志上报网络请求";
 
-extern NSString* const LOG_LOG_UPLOAD_START;
+static NSString* const LOG_LOG_UPLOAD_DETAIL = @"日志上报网络请求具体内容：";
 
-extern NSString* const LOG_LOG_UPLOAD_DETAIL;
 
-//网络响应类转Dictionary的KEY
-extern NSString* const ASS_STORAGE_KEY_SUCCESS;
 
-extern NSString* const ASS_STORAGE_KEY_APDID;
+static NSString* const LOG_JSON_PARSE_EXCEPTION = @"JSON解析失败";
 
-extern NSString* const ASS_STORAGE_KEY_TOKEN;
+static NSString* const ASS_STORAGE_KEY_SUCCESS = @"success";
+static NSString* const ASS_STORAGE_KEY_APDID = @"apdid";
+static NSString* const ASS_STORAGE_KEY_TOKEN = @"token";
+static NSString* const ASS_STORAGE_KEY_TIME = @"time";
+static NSString* const ASS_STORAGE_KEY_VKEYSWITCH = @"vkeyon";
+static NSString* const ASS_STORAGE_KEY_LOGSWITCH = @"logon";
+static NSString* const ASS_STORAGE_KEY_APPLISTVERSION = @"appver";
+static NSString* const ASS_STORAGE_KEY_STATICHASH = @"statichash";
+static NSString* const ASS_STORAGE_KEY_ERROR = @"error";
+static NSString* const ASS_APPKEY_INVALID = @"APPKEY_ERROR";
+static NSString* const ASS_STORAGE_KEY_WEBRTCURL = @"webrtcurl";
+static NSString* const ASS_STORAGE_KEY_DYNAMICKEY = @"dynamickey";
+static NSString* const ASS_STORAGE_KEY_AGENTURL = @"agentcurl";
+static NSString* const ASS_STORAGE_KEY_APSE_DEGRADE = @"apse_degrade";
+static NSString* const ASS_STORAGE_KEY_TIMEINTERVAL = @"timeInterval";
 
-extern NSString* const ASS_STORAGE_KEY_TIME;
+static NSString* const SECURE_SDK_KEYCHAIN_KEY = @"com.alipay.securesdk.storage";
+static NSString* const LAST_LOGIN_TIME_KEY = @"com.alipay.asssecuritySDK.lastlogintime";
+static NSString* const SECURE_SDK_RANDOM_STRING = @"com.alipay.securesdk.ranstr";
+static NSString* const SECURE_SDK_RANDOM_TOKEN = @"com.alipay.securesdk.tokenid";
+static NSString* const ASS_KEYCHAIN_KEY_SETTING = @"com.alipay.asssecuresdk.config";
+static NSString* const SECURE_SDK_RANDOM_CLIENTKEY_STRING = @"com.alipay.securesdk.clientkey";
+static NSString* const SECURE_SDK_KEYCHAIN_TOKEN = @"maintoken";
 
-extern NSString* const ASS_STORAGE_KEY_VKEYSWITCH;
+static NSString* const ASS_KEYCHAIN_KEY_APPLIST = @"com.alipay.asssecuresdk.list";
+static NSString* const ASS_KEYCHAIN_KEY_DFP = @"com.alipay.asssecuresdk.dfp";
+static NSString* const ASS_KEYCHAIN_KEY_GID = @"com.alipay.asssecuresdk.gid";
+static NSString* const ASS_KEYCHAIN_KEY_JBER = @"com.alipay.asssecuresdk.jber";
+static NSString* const ASS_KEYCHAIN_KEY_APDIDC = @"com.alipay.asssecuresdk.apdidc";
+static NSString* const ASS_KEYCHAIN_KEY_TMXTIME = @"com.alipay.asssecuresdk.tmxtime";
+static NSString* const ASS_KEYCHAIN_KEY_TMXSESSOINID = @"com.alipay.asssecuresdk.tmxsessionid";
+static NSString* const ASS_KEYCHAIN_KEY_ARPMAC = @"com.alipay.asssecuresdk.arpmac";
+static NSString* const ASS_KEYCHAIN_KEY_DYNAMICKEY = @"com.alipay.asssecuresdk.dynamickey";
 
-extern NSString* const ASS_STORAGE_KEY_LOGSWITCH;
+static NSString* const ASS_USER_DEFAULT_KEY_DEGRADE_TIME = @"asssecuritysdkdegrade";
 
-extern NSString* const ASS_STORAGE_KEY_APPLISTVERSION;
-
-extern NSString* const ASS_STORAGE_KEY_STATICHASH;
-
-extern NSString* const ASS_STORAGE_KEY_ERROR;
-
-extern NSString* const ASS_STORAGE_KEY_WEBRTCURL;
-
-extern NSString* const ASS_STORAGE_KEY_DYNAMICKEY;
-
-extern NSString* const ASS_STORAGE_KEY_AGENTURL;
-
-extern NSString* const ASS_STORAGE_KEY_APSE_DEGRADE;
-
-extern NSString* const ASS_STORAGE_KEY_TIMEINTERVAL;
-
-//keychain保存的key值
-extern NSString* const SECURE_SDK_KEYCHAIN_KEY;
-
-extern NSString* const LAST_LOGIN_TIME_KEY;
-
-extern NSString* const SECURE_SDK_RANDOM_STRING;
-
-extern NSString* const SECURE_SDK_RANDOM_TOKEN;
-
-extern NSString* const SECURE_SDK_RANDOM_CLIENTKEY_STRING;
-
-extern NSString* const ASS_KEYCHAIN_KEY_SETTING;
-
-extern NSString* const ASS_KEYCHAIN_KEY_APPLIST;
-
-extern NSString* const ASS_KEYCHAIN_KEY_DFP;
-
-extern NSString* const ASS_KEYCHAIN_KEY_GID;
-
-extern NSString* const ASS_KEYCHAIN_KEY_JBER;
-
-extern NSString* const ASS_KEYCHAIN_KEY_APDIDC;
-
-extern NSString* const ASS_KEYCHAIN_KEY_TMXTIME;
-
-extern NSString* const ASS_KEYCHAIN_KEY_TMXSESSOINID;
-
-extern NSString* const ASS_KEYCHAIN_KEY_ARPMAC;
-
-extern NSString* const ASS_KEYCHAIN_KEY_DYNAMICKEY;
-
-extern NSString* const ASS_USER_DEFAULT_KEY_DEGRADE_TIME;
-
-extern const int overtime;
-
-extern NSString* const PREDEFINE_VERSION;
-
-extern NSString* const PREDEFINE_DATA;
-
-extern NSString* const URL_SCHEME_WHITELIST_VERSION;
-
-extern NSString* const URL_SCHEME_WHITELIST_DATA;
-
-extern NSString* const ASS_APPKEY_INVALID;
-extern NSString* const SECURE_SDK_KEYCHAIN_TOKEN;
-
-extern NSErrorDomain APSECURITYSDK_ERROR_DOMAIN;
+static const int overtime = 9;
 
 //CRASHGUARD
-extern NSString* const CRASH_GUARD_GET_COLOR_INFO;
-extern NSString* const CRASH_GUARD_PRE_COLOR_INFO;
-extern NSString* const CRASH_GUARD_INIT_COLOR_INFO;
-extern NSString* const CRASH_GUARD_UPDATE_COLOR_CODE;
-extern NSString* const CRASH_GUARD_GET_COLOR_LABEL;
-extern NSString* const CRASH_GUARD_UPDATE_COLOR_LABEL;
-extern NSString* const CRASH_GUARD_INIT_TOKEN;
-extern NSString* const CRASH_GUARD_INIT;
+static NSString* const CRASH_GUARD_GET_COLOR_INFO = @"05f445";
+static NSString* const CRASH_GUARD_PRE_COLOR_INFO = @"f379d2";
+static NSString* const CRASH_GUARD_INIT_COLOR_INFO = @"25f523";
+static NSString* const CRASH_GUARD_UPDATE_COLOR_CODE = @"8e81ac";
+static NSString* const CRASH_GUARD_GET_COLOR_LABEL = @"d785d8";
+static NSString* const CRASH_GUARD_UPDATE_COLOR_LABEL = @"dccf1d";
+static NSString* const CRASH_GUARD_INIT_TOKEN = @"0780aa";
+static NSString* const CRASH_GUARD_INIT = @"e37f013";
 
 
 @interface ASSCommon : NSObject

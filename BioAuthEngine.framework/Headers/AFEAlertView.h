@@ -12,6 +12,7 @@ typedef void (^AFEAlertClickBlock) ();
 
 @interface AFEAlertView : NSObject
 
+@property(atomic, assign) BOOL isAlertViewShow;
 
 +(AFEAlertView*) sharedInstance;
 
@@ -66,4 +67,10 @@ typedef void (^AFEAlertClickBlock) ();
                             retryTip:(NSString *)retryTips
                       cancelCallBack:(AFEAlertClickBlock)cancelCall
                          setCallBack:(AFEAlertClickBlock)setCall;
+
+// 判断最顶层视图是否是 APBAlertViewController
+- (BOOL)isAPBAlertViewController;
+
+- (UIViewController *)currentViewController;
+
 @end

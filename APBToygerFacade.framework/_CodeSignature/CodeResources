@@ -10,7 +10,15 @@
 		</data>
 		<key>APBToygerFacade.bundle/id.strings</key>
 		<data>
-		o0EtW/eHFQGlJrj7rJdiIg2bRuU=
+		Ta6KQMbPYMRZSaEKOO2zysM2Bd4=
+		</data>
+		<key>APBToygerFacade.bundle/ja.strings</key>
+		<data>
+		Jm+Lm5RzCRBUBh/9M1Hj0j5j43U=
+		</data>
+		<key>APBToygerFacade.bundle/ko.strings</key>
+		<data>
+		YOAIEpraTsvuDWgNw2q/1FQzmbg=
 		</data>
 		<key>APBToygerFacade.bundle/zh-HK.strings</key>
 		<data>
@@ -78,7 +86,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9OhzdozSDTTD3/skO6sOkG0REsY=
+		S/n1dbIcgPgBSe+MdIBxjByY2wc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -102,11 +110,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o0EtW/eHFQGlJrj7rJdiIg2bRuU=
+			Ta6KQMbPYMRZSaEKOO2zysM2Bd4=
 			</data>
 			<key>hash2</key>
 			<data>
-			LAsAnarQLy+kmmnjBNZIRXLDuRV6wLXdmut3X2u/ECU=
+			CTm+T7Na2QzxJGHiGOJHzzUWNVaeKMTgX9gqlGKMMfI=
+			</data>
+		</dict>
+		<key>APBToygerFacade.bundle/ja.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Jm+Lm5RzCRBUBh/9M1Hj0j5j43U=
+			</data>
+			<key>hash2</key>
+			<data>
+			pa4OxgiWXs4Pl4nOusf9X8anqfgwNYF0TTVutzlB8b4=
+			</data>
+		</dict>
+		<key>APBToygerFacade.bundle/ko.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YOAIEpraTsvuDWgNw2q/1FQzmbg=
+			</data>
+			<key>hash2</key>
+			<data>
+			8uAyfrVy1Wrrnl30KiUDqal4FXV8Y9UWvgftloHIDek=
 			</data>
 		</dict>
 		<key>APBToygerFacade.bundle/zh-HK.strings</key>

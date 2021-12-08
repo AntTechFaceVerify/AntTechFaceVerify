@@ -10,19 +10,27 @@
 		</data>
 		<key>Headers/APDID.h</key>
 		<data>
-		mKKhDpYjwpawQ2/kYuFIDhhvwE8=
+		YaNffM20hdQMiNpnIoEPIHF8o+A=
 		</data>
 		<key>Headers/APDeviceColor.h</key>
 		<data>
-		we5W/ile9tDSs5PMtDv2Mz81+jE=
+		sqZwHJLZ8j2L+9pkCmTqWHaRPoo=
 		</data>
 		<key>Headers/APDynamic.h</key>
 		<data>
 		TBp9H7ZpcLh5hWGFJbObSnR3sSQ=
 		</data>
+		<key>Headers/APRiskConfigReportRequest.h</key>
+		<data>
+		5vPyFFL4v0DrNrSc35DrU0204M4=
+		</data>
+		<key>Headers/APRiskConfigReportResponse.h</key>
+		<data>
+		WODwFqptygg++OMfRxg5nJhV1tM=
+		</data>
 		<key>Headers/APRiskConfigServiceProtocol.h</key>
 		<data>
-		K2XYYwBDRqHX0QDfONROwnR7c20=
+		SJJczKTD81Beaeutnk5eh5yYk6s=
 		</data>
 		<key>Headers/APRiskFileUploadProtocol.h</key>
 		<data>
@@ -34,7 +42,7 @@
 		</data>
 		<key>Headers/APRiskRPCProtocol.h</key>
 		<data>
-		R7oiLtNR+ZkfQZAUiLmiZ/32ATY=
+		/OdHTVHBuEGxpO5dJbde5mXoV3Q=
 		</data>
 		<key>Headers/APRiskRemoteLoggerProtocol.h</key>
 		<data>
@@ -50,7 +58,7 @@
 		</data>
 		<key>Headers/APRiskRpcConfiguration.h</key>
 		<data>
-		3K1OO/KyYeCnonhxF9Q2iVwIL7g=
+		ypma2woz2iRq5pghoIkfFTGVm+8=
 		</data>
 		<key>Headers/APRiskSyncHandlerProtocol.h</key>
 		<data>
@@ -74,11 +82,11 @@
 		</data>
 		<key>Headers/APSign.h</key>
 		<data>
-		7qJGnk8rdcF6DQIqmh8kWEKeTDY=
+		CT91fWy1ujcURx5MCI+z5gE/k4g=
 		</data>
 		<key>Headers/ASSCommon.h</key>
 		<data>
-		E4hPjffSwO4J6if3aJ5vsFSYyus=
+		lrrlG7ZqNaz4ciXX/i5kj/NnG3A=
 		</data>
 		<key>Headers/ASSDynamicManager.h</key>
 		<data>
@@ -94,11 +102,15 @@
 		</data>
 		<key>Headers/ASSSecureOpenSdk.h</key>
 		<data>
-		ahhUBv0kGk6F8c7S1/C0YKhrpgk=
+		KmdnMxfQN0cqG23Vuu092URfYCs=
+		</data>
+		<key>Headers/ASSSgomInfoOpen.h</key>
+		<data>
+		/AhECuNKFdWPVi1Q6oH8rMN66XM=
 		</data>
 		<key>Headers/ASSTokenResult.h</key>
 		<data>
-		f5OBtoheCP7RcEXHyjL72y+ISZ0=
+		X5xdpK/2lE52tWoVFEg/ZivE9UQ=
 		</data>
 		<key>Headers/AntSecurityManager.h</key>
 		<data>
@@ -106,7 +118,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		muouYejyyjsM/7yUSBw7T0MFfPw=
+		Id5Tm/+MZvvattyC4X42uA566FA=
 		</data>
 		<key>en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -139,22 +151,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mKKhDpYjwpawQ2/kYuFIDhhvwE8=
+			YaNffM20hdQMiNpnIoEPIHF8o+A=
 			</data>
 			<key>hash2</key>
 			<data>
-			hm67erh57TQGBqnYHmIbtVMFgXWi9YuJm49bHo8Ae6k=
+			0nNHe4UB7qz6XFIk/QzRt79MyXYVEOukTfqa3YBJYbY=
 			</data>
 		</dict>
 		<key>Headers/APDeviceColor.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			we5W/ile9tDSs5PMtDv2Mz81+jE=
+			sqZwHJLZ8j2L+9pkCmTqWHaRPoo=
 			</data>
 			<key>hash2</key>
 			<data>
-			szcjw3qPY/XkeZplqnjorLf6gq2tOojlUJfXZNhLWqY=
+			c/mo/+N/KECjwx+fLMepqE+OqRtyfnn2hHshYhmO9IU=
 			</data>
 		</dict>
 		<key>Headers/APDynamic.h</key>
@@ -168,15 +180,37 @@
 			tUrg2Z43qGA67I0mIGCqRWU6Gc2I9Yx9mn5e2mu9XQU=
 			</data>
 		</dict>
+		<key>Headers/APRiskConfigReportRequest.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5vPyFFL4v0DrNrSc35DrU0204M4=
+			</data>
+			<key>hash2</key>
+			<data>
+			OMGRtuphIpujn+dr+tCsCMIUw+KV8WQ2zE+bsdDUVCw=
+			</data>
+		</dict>
+		<key>Headers/APRiskConfigReportResponse.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WODwFqptygg++OMfRxg5nJhV1tM=
+			</data>
+			<key>hash2</key>
+			<data>
+			NvTd6RhL7dbwHKHDPiqBqkIc9aWUQLV5SwFFsEorcqg=
+			</data>
+		</dict>
 		<key>Headers/APRiskConfigServiceProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			K2XYYwBDRqHX0QDfONROwnR7c20=
+			SJJczKTD81Beaeutnk5eh5yYk6s=
 			</data>
 			<key>hash2</key>
 			<data>
-			fwWfDIu7k9AdF5pD9TnqRZg4BR//Qk15X5kZpxWbKGM=
+			RyMjAfHvdfRW5n+MDPHVlPZ6VM0Kr/T2A133j9ytwDQ=
 			</data>
 		</dict>
 		<key>Headers/APRiskFileUploadProtocol.h</key>
@@ -205,11 +239,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R7oiLtNR+ZkfQZAUiLmiZ/32ATY=
+			/OdHTVHBuEGxpO5dJbde5mXoV3Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			Elu1lGoRg4Tm5RxxcqreC91hi98Imimr+pH5ubRilps=
+			1v7HTHTTRf+k61+lf5L1URwSh/MFv72gdnHxTodGrJA=
 			</data>
 		</dict>
 		<key>Headers/APRiskRemoteLoggerProtocol.h</key>
@@ -249,11 +283,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3K1OO/KyYeCnonhxF9Q2iVwIL7g=
+			ypma2woz2iRq5pghoIkfFTGVm+8=
 			</data>
 			<key>hash2</key>
 			<data>
-			VAvPo5WxbyyG5WfYLSHL4/n2+tHwl5JB/V9utXdyiiw=
+			xucoo82E5P13oVpu65VVAqbLK11kcVmtbwRCVlEQI5E=
 			</data>
 		</dict>
 		<key>Headers/APRiskSyncHandlerProtocol.h</key>
@@ -315,22 +349,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7qJGnk8rdcF6DQIqmh8kWEKeTDY=
+			CT91fWy1ujcURx5MCI+z5gE/k4g=
 			</data>
 			<key>hash2</key>
 			<data>
-			O/Tq1taomOh7GcXFdkfebQE2Md3kHxP941giDrFlE5M=
+			v0KnicXX1RLwYDqviLauQeFM06EfCDH9Apx4SpVPbW8=
 			</data>
 		</dict>
 		<key>Headers/ASSCommon.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			E4hPjffSwO4J6if3aJ5vsFSYyus=
+			lrrlG7ZqNaz4ciXX/i5kj/NnG3A=
 			</data>
 			<key>hash2</key>
 			<data>
-			XYHEOdJDtijufaHFqxLIn84TUGk+Rlmj2wGwkDQ7+DE=
+			adc/BhjRDcEbnGdNnfGBsTu2jTNZbT2Csi+oHGqx2oY=
 			</data>
 		</dict>
 		<key>Headers/ASSDynamicManager.h</key>
@@ -370,22 +404,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ahhUBv0kGk6F8c7S1/C0YKhrpgk=
+			KmdnMxfQN0cqG23Vuu092URfYCs=
 			</data>
 			<key>hash2</key>
 			<data>
-			S9aw3zvkSre7A02vecsG6M8J+1B8ZysfiWx+VjodW4w=
+			Xq/bbsjzFy4rMCr4osH17Nif1NZQqxmWKvgRHq4THr0=
+			</data>
+		</dict>
+		<key>Headers/ASSSgomInfoOpen.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/AhECuNKFdWPVi1Q6oH8rMN66XM=
+			</data>
+			<key>hash2</key>
+			<data>
+			j8Lnl+QqgD+rwdHhl7yEh7Op76XuicUYflL4/LNrFXE=
 			</data>
 		</dict>
 		<key>Headers/ASSTokenResult.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			f5OBtoheCP7RcEXHyjL72y+ISZ0=
+			X5xdpK/2lE52tWoVFEg/ZivE9UQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			HE0kE7iwTIw3gFPI4LPuaL78s8t//Fyhr3k5TmtRdvk=
+			7O9oGJk95fMdxJyn2mOlI1Iqe1vPcmPRvP5Rgj8J9zk=
 			</data>
 		</dict>
 		<key>Headers/AntSecurityManager.h</key>

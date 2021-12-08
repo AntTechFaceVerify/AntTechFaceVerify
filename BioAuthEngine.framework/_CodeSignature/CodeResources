@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/AFEAlertView.h</key>
 		<data>
-		bxJlCdZI5MUofmFTYLuirISB+94=
+		eJtFrKs4RbHrfhLZISdollmZ35I=
 		</data>
 		<key>Headers/AFECircleProgressBar.h</key>
 		<data>
@@ -162,7 +162,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZkQy2WgbV7yZY8aQ+SgDUTv3rEw=
+		g09JS6o+S2rkQkYmCEOv0KIDQ2o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -208,11 +208,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bxJlCdZI5MUofmFTYLuirISB+94=
+			eJtFrKs4RbHrfhLZISdollmZ35I=
 			</data>
 			<key>hash2</key>
 			<data>
-			aHVR4dBXGznbz9GU0s4mg0XvRLVBAG7joWMO8E8+jFw=
+			TmgrgAD/PYri3l8ftuobXm52jq4pGWjeHM1XRNiDr/I=
 			</data>
 		</dict>
 		<key>Headers/AFECircleProgressBar.h</key>

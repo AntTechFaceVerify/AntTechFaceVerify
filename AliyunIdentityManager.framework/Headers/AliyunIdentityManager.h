@@ -10,7 +10,7 @@
 
 
 
-//version 1.4.3
+//version 1.4.8
 
 
 //ext params keys
@@ -31,6 +31,7 @@ extern NSString *const ZIM_EXT_PARAMS_KEY_USE_VIDEO;  //返回本地视频的key
 extern NSString *const ZIM_EXT_PARAMS_KEY_OCR_FACE_CIRCLE_COLOR;
 extern NSString *const ZIM_EXT_PARAMS_KEY_USE_VIDEO_UPLOAD; //返回本地视频上传到服务端的key
 extern NSString *const ZIM_EXT_PARAMS_KEY_MODEL_FILE_PATH; //设置文件路径
+extern NSString *const ZIM_EXT_PARAMS_KEY_ACTIVITYINDICATOR_COLOR;
 @class ZIMResponse;
 
 
